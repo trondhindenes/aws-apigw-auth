@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+"aws-cdk.aws-lambda-python" = "*"
+"aws-cdk.aws-apigateway" = "*"
+"aws-cdk.aws-apigatewayv2" = "*"
+"aws-cdk.aws-apigatewayv2-authorizers" = "*"
+"aws-cdk.aws-apigatewayv2-integrations" = "*"
+
+
+[requires]
+python_version = "3.9"

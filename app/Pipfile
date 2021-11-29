@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+mangum = "*"
+aws-requests-auth = "*"
+jwcrypto = "*"
+expiringdict = "*"
+
+[requires]
+python_version = "3.9"
+
+[dev-packages]
+uvicorn = "*"
+boto3 = "*"
+pyjwt = "*"
