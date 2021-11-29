@@ -3,6 +3,12 @@
 ## TLDR
 Allows an aws iam identity (user/role) to retrieve a JWT proving its identity. This jwt can be used for api-to-api authentication, user-to-api authentication, etc.
 
+## Status/Todo:
+- ✅ Working Code
+- ✅ Cdk app for deployment
+- ⛔ http client for simple token retrieval
+- ⛔ example app (client and server)
+
 ## How it's built
 Uses AWS API Gateway's IAM authenticator to require a valid iam user when requesting the jwt. The current user/role is stamped in the token's `sub` attribute.
 This token can then be used to authenticate against an api. The solution also includes a `/.well-known/jwks.json` endpoint where the current token can be validated.
